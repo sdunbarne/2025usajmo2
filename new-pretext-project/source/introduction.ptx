@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<introduction xml:id="intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <p>The following problem appeared as Problem 2 on the 2025 USA Junior Mathematical Olympiad.</p>
+    <p><em>Problem:</em> Let <m>k</m> and <m>d</m> be positive integers.  Pove that there exists a positive
+     integer <m>N</m> such that for every odd integer <m> n > N</m> </p>, the digits in the base <m>2n</m> 
+     representation of <m><n^k</m> are all greater than <m>d</m>.</p>
+    <p> The goal is to investigat the solution and the number theory behind that solution.</p>
+</introduction>
