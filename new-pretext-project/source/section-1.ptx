@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:id="section-1" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>My First Section</title>
+  <title>Solutions</title>
   <introduction>
-    <p>Some words</p>
-  </introduction>
+    <p>I use the following notation throughout this article: <m>c_i</m> denotes the digit of 
+    <m>n^k</m> in the <m>(2n)^i</m> place, and <m>s_i</m> denotes the base <m>2n</m> number 
+    <m>c_{i}c_{i-1}\dots c_{2}c_{1}c_{0}</p> which is the truncation of <m>n^k</m> at the 
+    rightmost digits.  I find it mathematically clearer to write <m>n^k</m> in base <m>2n</m> as
+    <m>n^k = c_{i}(2n)^i + c_{i-1}(2n)^{i-1} + \dots + c_0(2n)^0</m>.  Then the goal is to
+    prove that there is a positive integer <m>N</m> such that for every odd <m>n > N</m> the 
+    coefficients satisfy <m>c_i\geq d+1</m> for all <m>i\geq 0</m>.</p> 
+    </introduction>
   <subsection xml:id="subsection-1">
-    <title>My First Subsection</title>
-    <p>Some more words</p>
-    <p>foo</p>
+    <title>First solution</title>
+    <p>Let <m>x%y</m> denote the remainder when <m>x</m> is divided by <m>y</m>.  Using the 
+    standard notation
+    <me>
+        c_i = \left\lfloor \frac{n^k}{(2n)^i} \right\rfloor % (2n) = \left\lfloor \frac{n^{k-i}{2^i} \right\rfloor%(2n)
+    </me>
+    The first equality follows because the division by <m>(2n)^i</m> will make the series
+    expansion with powers <m>j<i</m> less than <m>1</m>, so the floor function truncates them 
+    off.  Then remainder by <m>2n</m> operation elinates all by the constant term <m>c_i</m>.
+    The second equality follows simple division. Now the claim is
+    <me>
+    \left\lfloor \frac{n^{k-i}}{2^i} \right\rfloor%(2n) = 
+    \left\lfloor \frac{n^{k-i}%(2^{i+1}n)}{2^i} \right\rfloor,
+    </me>
+    that is, it possible to move the remainder operation inside the floor function with 
+    appropriate midification.  
+    </p>
+    <p></p>
     <figure>
       <caption>A frog</caption>
       <image source="frog.jpg" width="50%">
