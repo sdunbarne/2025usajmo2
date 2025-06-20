@@ -31,10 +31,49 @@
     appropriate modification.  
     </p>
     <subsection xml:id="subsection-2">
+        <title>Second solution</title>
+    <p>
     Note that obviously <m>n^k < (2n)^k</m>, so <m>n^k</m> has at most <m>k</m> 
-    digits when expressed in base <m>2n</m>.  Write <m>n^k = q(2n) + r</m>, where <m>q</m> 
-    is 
-    <p></p>
+    digits when expressed in base <m>2n</m> or equivalenty the power sum will have
+    at most <m>k</m> terms from power <m>(2n)^{k-1}</m> down to <m>(2n)^0</m>.  
+    Note that some of the leading digits or highest power coefficents may be zero.  
+    An example is <m>n=5</m> and <m>k=4</m>, where 
+    <m>n^k = 5^4 = 625 = 0(2 \cdot 5)^3 + 6(2 \cdot 5)^2 + 2(2 \cdot 5)^1 + 5(2 \cdot 5)^0</m>.
+    </p>
+    <p>
+    The next claim is that <m>n^k \equiv n (\mod (2n)</m>.  The proof is by induction.  The base
+    case is <m>k=1</m>, where <m>n^1 \equiv n (\mod (2n)</m> is trivially true.  The inductive step
+    starts with <m>n^{k+1} = n^k \cdot n \equiv n \cdot n = n^2 (\mod (2n)</m>.  Since <m>n</m> is odd, <m>n = 2m + 1
+    for some <m>m</m>.  Then <m>n^2 = (2m+1) \cdot n = (2m)n + n \equiv n (\mod (2n)</m> is also  true.  The inductive step is complete.
+    The conclusion drawn from this fact is that the units digit is <m>n</m>.</p>
+    <p>
+    Keeping with the established notation,<m>c_i</m> denotes the digit of 
+    <m>n^k</m> in the <m>(2n)^i</m> place, so in the power sum form
+    <me>
+    n^k = \sum_{i=0}^{k-1} c_i (2n)^i, 0 \le c_i < (2n)
+    </me>
+    and <m>s_i</m> denotes the base <m>2n</m> number which is the truncation 
+    of <m>n^k</m> at the 
+    <m>i+1</m>rightmost digits, so
+    <me>
+    s_i = \sum_{j=0}^{i} \sum_{i=0}^c_j (2n)^j, 0 \le c_j < (2n)
+    </me>
+    for each <m>i</m>.
+    </p>
+    Note that <m>n^k - s_i</m> has only terms of power <m>(2n)^{i+1}</m> and higher.  
+    Then <(2n)^{i+1}</m> divides <m>n^k - s_i</m>.  That is, <m>n^k - s_i = q \cdot (2n)^{i+1}</m>
+    or equivalently <m>s_i = n^k - q \cdot (2n)^{i+1} = n^{i+1}(n^{k-1-1}- q 2^{i+1})</m> 
+    for some integer <m>q</m>. That is <m> n^{i+1}</m> divides <m>s_i</m>.  Now <m>c_0 = n</m>
+    so <m>s_i > 0 </m> and therefore <m>s_i \ge n^{i+1}</m>.    
+    </p>
+    <p>
+    Now if <m>n > (d+1) \cdot 2^{i+1}</m>, then <m>s_i \ge (d+1) \cdot (2n)^{i} > (d+1)</m>.  
+    But this means the digit in the <m>(2n)^i</m> place is at least <m>d+1</m>.  
+    Since this is true for all <m>i</m> with <m>0 \le i \le k-1</m>, the problem is finished.
+    </p>
+    <p> In summary, given <m>k</k> and <m>d</m>, take <m>N=(d+1) \cdot 2^{k-1}</m> so that for every odd <m>n > N</m> all the
+    digits in the base <m>2n</m> expansion of <m>n^k</m> are greater than <m>d</m>.
+    </p>
     <figure>
       <caption>A frog</caption>
       <image source="frog.jpg" width="50%">
