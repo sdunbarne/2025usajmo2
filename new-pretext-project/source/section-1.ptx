@@ -36,7 +36,7 @@
     Note that obviously <m>n^k < (2n)^k</m>, so <m>n^k</m> has at most <m>k</m> 
     digits when expressed in base <m>2n</m> or equivalenty the power sum will have
     at most <m>k</m> terms from power <m>(2n)^{k-1}</m> down to <m>(2n)^0</m>.  
-    Note that some of the leading digits or highest power coefficents may be zero.  
+    Note that some of the leading digits or highest power coefficients may be zero.  
     An example is <m>n=5</m> and <m>k=4</m>, where 
     <m>n^k = 5^4 = 625 = 0(2 \cdot 5)^3 + 6(2 \cdot 5)^2 + 2(2 \cdot 5)^1 + 5(2 \cdot 5)^0</m>.
     </p>
@@ -56,13 +56,13 @@
     of <m>n^k</m> at the 
     <m>i+1</m>rightmost digits, so
     <me>
-    s_i = \sum_{j=0}^{i} \sum_{i=0}^c_j (2n)^j, 0 \le c_j < (2n)
+    s_i = \sum_{j=0}^{i} \sum_{i=0}^{i} c_j (2n)^j, 0 \le c_j < (2n)
     </me>
     for each <m>i</m>.
     </p>
     Note that <m>n^k - s_i</m> has only terms of power <m>(2n)^{i+1}</m> and higher.  
     Then <(2n)^{i+1}</m> divides <m>n^k - s_i</m>.  That is, <m>n^k - s_i = q \cdot (2n)^{i+1}</m>
-    or equivalently <m>s_i = n^k - q \cdot (2n)^{i+1} = n^{i+1}(n^{k-1-1}- q 2^{i+1})</m> 
+    or equivalently <m>s_i = n^k - q \cdot (2n)^{i+1} = n^{i+1}(n^{k-i-1}- q 2^{i+1})</m> 
     for some integer <m>q</m>. That is <m> n^{i+1}</m> divides <m>s_i</m>.  Now <m>c_0 = n</m>
     so <m>s_i > 0 </m> and therefore <m>s_i \ge n^{i+1}</m>.    
     </p>
