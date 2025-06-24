@@ -1,0 +1,5 @@
+/workspaces/2025usajmo2/new-pretext-project/source/main.ptx:9:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element titlepage, got abstract
+/workspaces/2025usajmo2/new-pretext-project/source/main.ptx:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element frontmatter there
+/workspaces/2025usajmo2/new-pretext-project/source/main.ptx:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got frontmatter
+/workspaces/2025usajmo2/new-pretext-project/source/main.ptx:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element proof, got frontmatter
+/workspaces/2025usajmo2/new-pretext-project/source/main.ptx:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element exercise, got frontmatter
