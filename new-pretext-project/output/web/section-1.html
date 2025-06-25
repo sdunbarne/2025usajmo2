@@ -114,7 +114,7 @@ eBookConfig.enable_chatcodes =  false;
 </head>
 <body id="dunbar-2025Usajmo2" class="pretext article ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
-<h1 class="heading"><a href="shorttitlelowercase.html"><span class="title">Detailed Understanding of 2025 USAMO Problem 2</span></a></h1>
+<h1 class="heading"><a href="shorttitlelowercase.html"><span class="title">Detailed Understanding of 2025 USAJMO Problem 2</span></a></h1>
 <p class="byline">Steven R. Dunbar</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
@@ -154,18 +154,41 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-1"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1</span><span class="space"> </span><span class="title">Solutions</span>
 </h2>
-<section class="introduction" id="section-1-2"><div class="para" id="section-1-2-1">I use the following notation throughout this article: <span class="process-math">\(c_i\)</span> denotes the digit of <span class="process-math">\(n^k\)</span> in the <span class="process-math">\((2n)^i\)</span> place, and <span class="process-math">\(s_i\)</span> denotes the base <span class="process-math">\(2n\)</span> number <span class="process-math">\(c_{i}c_{i-1}\dots c_{2}c_{1}c_{0}\)</span> which is the truncation of <span class="process-math">\(n^k\)</span> at the rightmost digits.  Note that obviously <span class="process-math">\(n^k \lt (2n)^k\text{,}\)</span> so <span class="process-math">\(n^k\)</span> has at most <span class="process-math">\(k\)</span> digits when expressed in base <span class="process-math">\(2n\text{.}\)</span>  Then I find it mathematically clearer to write <span class="process-math">\(n^k\)</span> in base <span class="process-math">\(2n\)</span> as <span class="process-math">\(n^k = c_{k-1}(2n)^{k-1} + c_{k-2}(2n)^{i-2} + \dots + c_1(2n)^1 + c_0(2n)^0\text{.}\)</span>  Then the goal is to prove that there is a positive integer <span class="process-math">\(N\)</span> such that for every odd <span class="process-math">\(n &gt; N\)</span> the coefficients satisfy <span class="process-math">\(c_i\geq d+1\)</span> for all <span class="process-math">\(i\geq 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="section-1-2"><div class="para logical" id="section-1-2-1">
+<div class="para">I use the following notation throughout this article:</div>
+<ul class="disc" id="section-1-2-1-1">
+<li id="section-1-2-1-1-1">
+<div class="para" id="p-derived-section-1-2-1-1-1">
+<span class="process-math">\(c_i\)</span> denotes the digit of <span class="process-math">\(n^k\)</span> in the <span class="process-math">\((2n)^i\)</span> place, and</div>
+<div class="autopermalink" data-description="Item"><a href="#section-1-2-1-1-1" title="Copy permalink for Item">🔗</a></div>
+</li>
+<li id="section-1-2-1-1-2">
+<div class="para" id="p-derived-section-1-2-1-1-2">
+<span class="process-math">\(s_i\)</span> denotes the base <span class="process-math">\(2n\)</span> number <span class="process-math">\(c_{i}c_{i-1}\dots c_{2}c_{1}c_{0}\)</span> which is the truncation of <span class="process-math">\(n^k\)</span> at the rightmost digits.</div>
+<div class="autopermalink" data-description="Item"><a href="#section-1-2-1-1-2" title="Copy permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Note that obviously <span class="process-math">\(n^k \lt (2n)^k = 2^k n^k\text{,}\)</span> so <span class="process-math">\(n^k\)</span> has at most <span class="process-math">\(k\)</span> digits when expressed in base <span class="process-math">\(2n\text{.}\)</span> I find it mathematically clearer to write <span class="process-math">\(n^k\)</span> in base <span class="process-math">\(2n\)</span> as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+n^k = c_{k-1}(2n)^{k-1} + c_{k-2}(2n)^{i-2} + \dots + c_1(2n)^1 + c_0(2n)^0\text{.}
+\end{equation*}
+</div>
+<div class="para">The goal is to prove that there is a positive integer <span class="process-math">\(N\)</span> such that for every odd <span class="process-math">\(n &gt; N\)</span> the coefficients satisfy <span class="process-math">\(c_i\geq d+1\)</span> for all <span class="process-math">\(i\geq 0\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsection-1"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">First solution</span>
 </h3>
 <div class="para logical" id="subsection-1-2">
-<div class="para">Let <span class="process-math">\(x%y\)</span> denote the remainder when <span class="process-math">\(x\)</span> is divided by <span class="process-math">\(y\text{.}\)</span>  Using the standard notation</div>
+<div class="para">Let <span class="process-math">\(\operatorname{rem}(x,y)\)</span> denote the remainder when <span class="process-math">\(x\)</span> is divided by <span class="process-math">\(y\text{.}\)</span>  Using the standard notation</div>
 <div class="displaymath process-math">
 \begin{equation*}
-c_i = \left\lfloor \frac{n^k}{(2n)^i} \right\rfloor % (2n) = \left\lfloor \frac{n^{k-i}{2^i} \right\rfloor%(2n)
+c_i = \left\lfloor \frac{n^k}{(2n)^i} \right\rfloor \% (2n) 
+= \left\lfloor \frac{n^{k-i}{2^i} \right\rfloor \% (2n)
 \end{equation*}
 </div>
-<div class="para">The first equality follows because the division by <span class="process-math">\((2n)^i\)</span> will make the series expansion with powers <span class="process-math">\(j \lt i\)</span> less than <span class="process-math">\(1\text{,}\)</span> so the floor function truncates them off.  Then remainder by <span class="process-math">\(2n\)</span> operation eliminates all but the constant term <span class="process-math">\(c_i\text{.}\)</span> The second equality follows simple division. Now the claim is</div>
+<div class="para">The first equality follows because the division by <span class="process-math">\((2n)^i\)</span> will make the series expansion with powers <span class="process-math">\(j \lt i\)</span> less than <span class="process-math">\(1\text{,}\)</span> so the floor function truncates them off.  Then remainder by <span class="process-math">\(2n\)</span> operation eliminates all but the constant term <span class="process-math">\(c_i\text{.}\)</span> The second equality follows by simple division. Now the claim is</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \left\lfloor \frac{n^{k-i}}{2^i} \right\rfloor%(2n) = 

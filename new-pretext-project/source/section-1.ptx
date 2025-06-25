@@ -5,13 +5,14 @@
     <p>I use the following notation throughout this article: 
     <ul>
     <li> <m>c_i</m> denotes the digit of 
-    <m>n^k</m> in the <m>(2n)^i</m> place, and 
+    <m>n^k</m> in the <m>(2n)^i</m> place, and</li> 
     <li> <m>s_i</m> denotes the base <m>2n</m> number 
     <m>c_{i}c_{i-1}\dots c_{2}c_{1}c_{0}</m> which is the truncation of <m>n^k</m> at the 
-    rightmost digits.  
+    <m>i+1</m> rightmost digits. </li> 
     </ul>
     Note that obviously <m>n^k \lt (2n)^k = 2^k n^k</m>, so <m>n^k</m> has at most <m>k</m> 
-    digits when expressed in base <m>2n</m>. 
+    digits in places <m>(2n)^{k-1}</m> down to the units place <m>(2n)^0</m> 
+    when expressed in base <m>2n</m>. 
     I find it mathematically clearer to write <m>n^k</m> in base <m>2n</m> as
     <me>
     n^k = c_{k-1}(2n)^{k-1} + c_{k-2}(2n)^{i-2} + \dots + c_1(2n)^1 + c_0(2n)^0

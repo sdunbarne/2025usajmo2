@@ -15,6 +15,7 @@
     <xi:include href="./frontmatter.ptx" />
     
     <xi:include href="./introduction.ptx" />
+    <xi:include href="./problem.ptx" />
     <xi:include href="./section-1.ptx" />
     <xi:include href="./section-2.ptx" />
   </article>

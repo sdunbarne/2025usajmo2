@@ -1,0 +1,14 @@
+INFO    : Found entry no longer exists 5580
+INFO    : Now preparing local server to preview your project directory `/workspaces/2025usajmo2/new-pretext-project`.
+INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :   GitHub Pages site that can be shared with readers who cannot access your
+INFO    :   personal computer.)
+INFO    : 
+INFO    : starting server ...
+INFO    : Running in a codespace, so using a subprocess server.
+INFO    : Starting the server
+INFO    : Added server entry 07f78c8286 8750 8128 localhost
+
+INFO    : Server will soon be available at https://cautious-space-disco-vgqxg6wqpw92x9rx-8128.app.github.dev
+INFO    : Opening browser for target `web` at https://cautious-space-disco-vgqxg6wqpw92x9rx-8128.app.github.dev/output/web
+INFO    : 
