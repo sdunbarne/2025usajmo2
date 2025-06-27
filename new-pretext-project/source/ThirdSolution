@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:id="section-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Third Solution</title>
+  <p>
+  This solution will prove an explicit formula for the digits in the 
+  base<m>(2n)</m> expansion of <m>n^k</m>, specifically
+  <me>
+  c_i = \left\lfloor 2n \left\{ \frac{n^{k-i-1}}{2^{i+1}\right\} \right\rfloor
+  </me>. 
+  Note that once this is established, <m>\left\{ 0 \le \frac{n^{k-i-1}}{2^{i+1}\right\} \lt 1</me>
+  that <m>0 \le c_i 2n</m>.  Establishing this fact will finish the proof becuase if
+  <m>n \ge 2^{k-1}(d + 1)</m>, then
+  <me>
+  c_i \gt 2n \left\{ \frac{n^{k-i-1}}{2^{i+1}\right\} - 1 
+     \ge \frac{2n}{2^k} - 1 \gt (d+1) - 1 = d 
+     </me>. 
+<lemma xml:id="lemma-digits">
+   <statement>
+    For any <m>m</m> with <m>0 \le m \le k</m> 
+    <me>
+    n^k - \sum_{i=m}^{k-1} = (2n)^m
+\left\{ \frac{n^{k-m}}{2^m} \right\}   
+</statement>
+  <proof>
+    <p>
+    <ol>
+      <li> The proof is by downward induction on <m>m</m>. 
+      When <m>m = k</m>, the statement is <m>n^k - 0 = \frac{(2n)^k}{2^k}</m>
+      which is true.</li>
+      <li> Suppose the statement holds for <m>m+1</m>.  Then
+      using the induction hypothesis
+      <md>
+      <mrow> n^k - \sum_{i=m}^{k-1} = (2n)^m
+\left\{ \frac{n^{k-m}}{2^m} \right\}  \amp=
+(2n)^{m+1}
+\left\{ \frac{n^{k-m-1}}{2^{m+1} \right\} - c_m(2n)^m 
+</mrow>
+<mrow> \amp= (2n)^m \left( 
+    \left\{ \frac{n^{k-m-1}}{2^{m+1} \right\} -
+    \left\lfloor 2n \left\{ \frac{n^{k-m-1}}}{2^{m+1}} \right\rfloor \right)
+</mrow>
+<mrow> \amp=(2n)^m \left\{ 2n \left\{ \frac{n^{k-m-1}}}{2^{m+1}} \right} 
+</mrow>. 
+The last step used the identity <m>x - \lfloor x \rfloor = \{ x \}</m>. 
+</li>
+<li>  Notice that is <m>a</m> is an integer and  <m>x</m> is a real number
+then <m>\{a \{x \}\} = \{ ax\}</m>. </li>
+<li> 
+Using this identity further simplifies to
+<me>
+n^k - \sum_{i=m}^{k-1} = (2n)^m
+\left\{ \frac{n^{k-m}}{2^m} \right\} =
+(2n)^m \left\{ 2n \frac{n^{k-m-1}}}{2^{m+1}} \right} 
+= (2n)^m \left\{ \frac{n^{k-m}}{2^m}\right\}. 
+This complete the induction step.
+</ol>
+        </p>
+  </proof>
+</lemma>

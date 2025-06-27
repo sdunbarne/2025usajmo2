@@ -18,3 +18,7 @@
     </me>.  The goal is to
     prove that there is a positive integer <m>N</m> such that for every odd <m>n > N</m> the 
     coefficients satisfy <m>c_i\geq d+1</m> for all <m>i\geq 0</m>.</p> 
+<p>
+For a real number <m>x</m>, write <m>\lfloor x \rfloor</m> for the greatest integer less than
+<m>x</m> and <m>{x} = x - lfloorx\rfloor</me> for the fractional part of <m>x</m>. 
+    </section>
