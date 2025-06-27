@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <section xml:id="section-2" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>My Additional Section</title>
+  <title>Second Solution</title>
+  <p>
+  Following the first four paragraphs of the First Solution,
+  recall that <m> n^{i+1}</m> divides <m>s_i</m>.  Denote 
+  <m>t_i = s_i/n^{i+1}</m>.   
+  Recall that the units digit is <m>c_0 = n</m> so 
+  <m>s_i \gt 0</m> and therefore <m>t_i \ge 1</me>.  We have
+  <me>
+  c_i = \left\lfloor \frac{s_i}{(2n)^i} \right\rfloor 
+      = \left\lfloor \frac{nt_i}{2^i}\right\rfloor
+      \ge \left\lfloor \frac{n}{2^i}\right\rfloor
+  </me>. 
+  </p>
+  <p>
+  As noted in the First Solution 
+  <m>n^k \lt (2n)^k</m>, so <m>n^k</m> has at most <m>k</m> 
+    digits when expressed in base <m>2n</m>.  So we may always assume 
+    <m>i < k</m>.  But if <m> n \gt 2^{k-1}(d + 1)</m>, then 
+    by the foregoing 
+    <me>
+    c_i \gt  \left\lfloor \frac{n}{2^i}\right\rfloor \ge 
+    \left\lfloor \frac{2^{k-1}(d+1)}{2^k-1}\right\rfloor 
+    = (d+1)
+    </me>
+    as desired.
+  </p>
+  <p>
+  Another way to prove 
+  <me>
+   c_i = left\lfloor \frac{nt_i}{2^i}\right\rfloor
+   </me>
+   is to first to recall that <m>s_i = t_i \cdot n^{i+1}</m> 
+   and <m>s_{i-1} = t_{i-1} \cdot n^i</m>.  then
+   <me>
+   c_i = \frac{s_i - s_{i-1}}{(2n)^i} 
+   = \frac{n t_i - t_{i-1}}{2^i}
+   </me>.
+   But <m>s_i \lt (2n)^{i+1}</m>, so 
+   <me>t_i \cdot n^{i+1} \lt 2^{i+1} = 
+   \left\lfloor \frac{nt_i}{2^i}\right\rfloor
+   </me>. 
+Then the proof proceeds as before.
+</p>
+
+  <!--
   <p>foo</p>
   <figure xml:id="figure-tikz-example-diagram">
     <caption>The graph <m>C_5</m> made by TikZ</caption>
@@ -10,4 +54,5 @@
     </image>
   </figure>
   <p>bar</p>
+  -->
 </section>

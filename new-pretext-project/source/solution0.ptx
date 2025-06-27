@@ -1,0 +1,18 @@
+  <p>Let <m>\operatorname{rem}(x,y)</m> denote the remainder when 
+    <m>x</m> is divided by <m>y</m>.  Using the standard notation
+    <me>
+        c_i = \left\lfloor \frac{n^k}{(2n)^i} \right\rfloor \% (2n) 
+            = \left\lfloor \frac{n^{k-i}{2^i} \right\rfloor \% (2n)
+    </me>
+    The first equality follows because the division by <m>(2n)^i</m> will make the series
+    expansion with powers <m>j \lt i</m> less than <m>1</m>, so the floor function truncates them 
+    off.  Then remainder by <m>2n</m> operation eliminates all but the constant term <m>c_i</m>.
+    The second equality follows by simple division. Now the claim is
+    <me>
+    \left\lfloor \frac{n^{k-i}}{2^i} \right\rfloor%(2n) = 
+    \left\lfloor \frac{n^{k-i}%(2^{i+1}n)}{2^i} \right\rfloor,
+    </me>
+    that is, it is possible to move the remainder operation inside the floor function with 
+    appropriate modification.  
+    </p>
+  </subsection>
