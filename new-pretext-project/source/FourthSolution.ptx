@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<section xml:id="section-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Fourth Solution</title>
+  <p>
+  This solution is by induction on the power <m>k</m> with the multiplication 
+  algorithm.  This solution will prove that if the base-<m>2n</m> digits of
+  <m>n^{k-1}</m> are all at least <m>2(d+1)</m> then the base-<m>2n</m> digits of 
+  <m>n^k</m> are all at least <m>d+1</m>.
+</p>
+<p>
+The concept of this solution is simple.  Multiplying <m>n^{k-1} \cdot n</m> using 
+the elementary school multiplication algorithmin base <m>2n</m>, if every digit of 
+<m>n^{k-1}</m> is at least <m>2d</m>, then every carry is between <m>d</m> and <m>m-1</m>.
+Therefore every digit of the product is of the form <m>x + r \mod (2n)</m> where <m>x</m>
+is either <m>0</m> or <m>n</m>, that is, <m>n</m> times a digit <m>\mod (2n)</m>, 
+and <m>d \le r \le n-1</m>.  In particular, every digit is at least <m>d</m>.  Note that
+in particular, it is necessary to recognize that each carry is at most <m>m-1</m>.
+If <m>n</m> carried over to an odd digit of <m>n^{k-1}</m>, then the corresponding 
+digit of <m>n^{k}</m> would be <m>0</m> which is less than <m>d</m>.
+<p>
+The base case <m>k=1</m> is true if <m>N = d</m>. That is, for an odd integer <m>n > N</m>
+the base-<m>2n</m> representation of <m>n</m> which will be the 
+single <lq>digit<rq> <m>n</m> which then satisifies <m>n \gt N = d</m>.
+</p>
+<p>
+<lemma>
+    <title>Multiplication</title>
+  <statement>
+    <p>
+      Let the base-<m>2n</m> digits of <m>A</m> be <m>a_{m}a_{m-1} \dots a_{1}a_{0}</m>.
+      In other words, <m>0 \le a_i \le 2n</m> and <m>A = \sum_{i=0}^m a_i (2n)^{i}</m>.
+      Iteratively define the digits of <m> n \cdot A </m> as <m>c_i</m> with carries <m>r_i</m>
+      as <m>r_0 = 0</m>, <m>c_i = \operatorname{rem}(n a_i + r_i, 2n)</m>, 
+      and 
+      <me>
+          r_{i+1} = \left\lfloor \frac{n a_i + r_i}{2n} \right\rfloor
+      </me>.
+       Then 
+       <ol>
+       <li> <m>0 \le c_i \le 2n</m> for each <m>i \ge 0</m>.</li>
+       <li> <m>0 \le r_i < n</m> for each <m>i \ge 0</m>.</li>
+       <li> <m> n \cdot A = \sum_{i=0}^{m+1} c_i (2n)^{i}</m></li>
+    </ol>     
+    </p>
+  </statement>
+
+  <proof>
+    <p>
+      <ol>
+      <li> The first item is true by definition since <m>c_i</m> is a 
+      remainder modulo <m>2n</m>. </li>
+      <li> Prove the second item by induction on <m>i</m>.  The base case is
+      true since <m>r_0=0</m> and then if <m>r_i < n</m>
+      <me>
+      0 \le r_{i+1} \le \left\lfloor \frac{n(2n-1) + (n-1)}{2n} \right\rfloor = n-1
+      <me>,
+      establishing the induction step.</li>
+      <li>To prove the third item, let <m>s_k = \sum_{i=0}^{k} c_i (2n)^i</m>.  By induction
+      on <m>k</m>, <m>s_k \equiv nA \mod (2n)^{k+1}</m>.  Since <m>n \cdot A \lt n \cdot (2n)^{m}</m>
+      and <m>0 \le s_{m+1} \lt (2n)^{m+1}</m>, this implies <m>n \cdot A = s_{m+1}</m>, 
+      completing the proof.
+    </p>
+  </proof>
+</theorem>
+
