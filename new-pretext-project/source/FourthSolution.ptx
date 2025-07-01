@@ -61,5 +61,38 @@ single <lq>digit<rq> <m>n</m> which then satisifies <m>n \gt N = d</m>.
       completing the proof.
     </p>
   </proof>
-</theorem>
+</lemma>
+</p>
+<p>
+Apply the lemma to <m>n^{k-1}</m> with digits <m>a_{m}a_{m-1}\dots a_{1}a_{0}</m>.
+Sppose that <m>a_i \ge 2(d+1)</m> for all <m>i</m>.  Multiplying 
+<m>n^{k-1} \cdot n = n^{k}</m> with digits <m>c_i</m> and carries <m>r_i</m>.
+Then <m>c_0 = n \gt d</m> since <m>a_0 = n \gt d</m>.  On the other hand, if'
+<m> i \ge 1 </m>, then 
+<me>
+   r_i = \left\lfloor \frac{n a_{i-1} + r_{i-1}}{2n} \right\rfloor \gt
+        \left\lfloor \frac{n \cdot 2(d+1) + 0}}{2n} \right\rfloor = <d></d>
+        <1></1>
+</me>
+so all carries are at least <m>d+1</m>.  But <m>\operatorname{rem}(n \cdot a_{i}, 2n)</m>
+is either <m>0</m> or <m>n</m>, so 
+<me> 0 + (d+1) \le \operatorname{rem}(n \cdot a_{i}, 2n) \le n + (n-1) 
+</me>
+which means that <m>\operatorname{rem}(n \cdot a_{i}, 2n) + r_i</m> is between 
+<m>d+1</m> and <m> 2n-1</m> so 
+<me>
+    c_i = \operatorname{rem( \operatorname{rem}(n \cdot a_{i}, 2n) + r_{i}, 2n) \gt d 
+</me>.
+</p>
+<p>
+As an alternative argument, if the base-<m>2n</m> digits of <m>n^{k-1}</m> are 
+<m>a_{m}a_{m-1}\dots a_{1}a_{0}</m> and the digits of
+<m>n^{k-1} \cdot n = n^{k}</m> are <m>c_{k-1}c_{k-2}\dots c_{2}c_{1}c_{0}</m>, then
+multiplying <m>n^{k}</m> by <m>2</m> gives the base-<m>2n</m> number
+<m>a_{m}a_{m-1}\dots a_{1}a_{0}0</m>.  If one of th digits <m>c_i \le d</m>, then when 
+multiplying it by <m>2</m>, the carry is at most <m>1</m>, so 
+<m> a_{i} \le 2 c_i + 1 \le 2d + 1</me> which contradicts <m>a_{i} \ge 2(d+1)</m>. 
+</p>
+
+
 
