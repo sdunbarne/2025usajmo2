@@ -17,10 +17,11 @@ and <m>d \le r \le n-1</m>.  In particular, every digit is at least <m>d</m>.  N
 in particular, it is necessary to recognize that each carry is at most <m>m-1</m>.
 If <m>n</m> carried over to an odd digit of <m>n^{k-1}</m>, then the corresponding 
 digit of <m>n^{k}</m> would be <m>0</m> which is less than <m>d</m>.
+</p>
 <p>
 The base case <m>k=1</m> is true if <m>N = d</m>. That is, for an odd integer <m>n > N</m>
 the base-<m>2n</m> representation of <m>n</m> which will be the 
-single <lq>digit<rq> <m>n</m> which then satisifies <m>n \gt N = d</m>.
+single <q>digit</q> <m>n</m> which then satisifies <m>n \gt N = d</m>.
 </p>
 <p>
 <lemma>
@@ -38,7 +39,7 @@ single <lq>digit<rq> <m>n</m> which then satisifies <m>n \gt N = d</m>.
        Then 
        <ol>
        <li> <m>0 \le c_i \le 2n</m> for each <m>i \ge 0</m>.</li>
-       <li> <m>0 \le r_i < n</m> for each <m>i \ge 0</m>.</li>
+       <li> <m>0 \le r_i \lt n</m> for each <m>i \ge 0</m>.</li>
        <li> <m> n \cdot A = \sum_{i=0}^{m+1} c_i (2n)^{i}</m></li>
     </ol>     
     </p>
@@ -50,15 +51,16 @@ single <lq>digit<rq> <m>n</m> which then satisifies <m>n \gt N = d</m>.
       <li> The first item is true by definition since <m>c_i</m> is a 
       remainder modulo <m>2n</m>. </li>
       <li> Prove the second item by induction on <m>i</m>.  The base case is
-      true since <m>r_0=0</m> and then if <m>r_i < n</m>
+      true since <m>r_0=0</m> and then if <m>r_i \lt n</m>
       <me>
       0 \le r_{i+1} \le \left\lfloor \frac{n(2n-1) + (n-1)}{2n} \right\rfloor = n-1
-      <me>,
+      </me>,
       establishing the induction step.</li>
       <li>To prove the third item, let <m>s_k = \sum_{i=0}^{k} c_i (2n)^i</m>.  By induction
       on <m>k</m>, <m>s_k \equiv nA \mod (2n)^{k+1}</m>.  Since <m>n \cdot A \lt n \cdot (2n)^{m}</m>
       and <m>0 \le s_{m+1} \lt (2n)^{m+1}</m>, this implies <m>n \cdot A = s_{m+1}</m>, 
-      completing the proof.
+      completing the proof.</li>
+      </ol>
     </p>
   </proof>
 </lemma>
@@ -71,8 +73,7 @@ Then <m>c_0 = n \gt d</m> since <m>a_0 = n \gt d</m>.  On the other hand, if'
 <m> i \ge 1 </m>, then 
 <me>
    r_i = \left\lfloor \frac{n a_{i-1} + r_{i-1}}{2n} \right\rfloor \gt
-        \left\lfloor \frac{n \cdot 2(d+1) + 0}}{2n} \right\rfloor = <d></d>
-        <1></1>
+        \left\lfloor \frac{n \cdot 2(d+1) + 0}}{2n} \right\rfloor = 1
 </me>
 so all carries are at least <m>d+1</m>.  But <m>\operatorname{rem}(n \cdot a_{i}, 2n)</m>
 is either <m>0</m> or <m>n</m>, so 
@@ -91,8 +92,9 @@ As an alternative argument, if the base-<m>2n</m> digits of <m>n^{k-1}</m> are
 multiplying <m>n^{k}</m> by <m>2</m> gives the base-<m>2n</m> number
 <m>a_{m}a_{m-1}\dots a_{1}a_{0}0</m>.  If one of th digits <m>c_i \le d</m>, then when 
 multiplying it by <m>2</m>, the carry is at most <m>1</m>, so 
-<m> a_{i} \le 2 c_i + 1 \le 2d + 1</me> which contradicts <m>a_{i} \ge 2(d+1)</m>. 
+<m> a_{i} \le 2 c_i + 1 \le 2d + 1</m> which contradicts <m>a_{i} \ge 2(d+1)</m>. 
 </p>
+</section>
 
 
 

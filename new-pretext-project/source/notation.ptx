@@ -20,7 +20,7 @@
     coefficients satisfy <m>c_i\geq d+1</m> for all <m>i\geq 0</m>.</p> 
 <p>
 For a real number <m>x</m>, write <m>\lfloor x \rfloor</m> for the greatest integer less than
-<m>x</m> and <m>{x} = x - \lfloor x \rfloor</me> for the fractional part of <m>x</m>.
+<m>x</m> and <m>{x} = x - \lfloor x \rfloor</m> for the fractional part of <m>x</m>.
 For integers <m>x</m> and <m>y</m>, let <m>\operatorname{rem}(x,y) </m> be the remainder
-left by division of <m>x</m> by <m>y</m>. 
+left by division of <m>x</m> by <m>y</m>. </p>
     </section>

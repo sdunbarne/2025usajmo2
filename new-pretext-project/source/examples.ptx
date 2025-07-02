@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<section xml:id="section-1" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>First Solution</title>
+<section xml:id="examples" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Preliminary Examples</title>
 <p>
 Let <m>k=3</m> and <m>d = 6</m>.  The proofs later will show that 
  taking <m>N = (d+1) \cdot 2^{k-1} = 7 \cdot 2^{2} =28</m> and <m>n</m> an odd integer 
- greater than <m>N = 28</m>, say <m>n = 29</m> then all the digits of <m>29^3</> in
- base-<m>58</me> are greater than <m>6</m>.  This really means expressing 
+ greater than <m>N = 28</m>, say <m>n = 29</m>, then all the digits of <m>29^3</m> in
+ base-<m>58</m> are greater than <m>6</m>.  This really means expressing 
 <m>29^3 = 24,389 = 7 \cdot 58^2 + 14 \cdot 58 + 29</m> and the <q>digits</q> of 
-<m>29^3</m> in base-<m>58</me> are <m>7</m>, <m>14</m>, and <m>29</m> are all 
-greater than <m>6</m>.  Note that the final digit of <m>29^3</m> in base-<m>58</me> is 
-<m>n=29</m> itself.  This will be proved to be true in ganeral in the later sections.
+greater than <m>d = 6</m>.  Note that the final digit of <m>29^3</m> in base-<m>58</m> is 
+<m>n=29</m> itself.  This will be proved to be true in general in the later sections.
 </p>
 <p>
 On the other hand, consider the even number <m>30</m> greater than <m>N = 28</m>.  
 Then <m>30^3 = 27,000</m> epressed in base-<m>60</m> is <m>7 \cdot 60^{2} + 30 \cdot 60 + 0</m>
 and the last digit <m>0</m> fails to be greater than <m>6</m>.
 </p>
+<p>
 As some further examples, consider the following table of odd numbers <m>n</m>
-raised to some low powers and then expressed in base-<2n>.  The expressions with
-<q>digits</q> expressed as decimal numbers, in parentheses if the base is 
+raised to some low powers and then expressed in base-<m>2n</m>.  The expressions have their
+<q>digits</q> expressed as decimal numbers, with a <q>digit</q> in parentheses if the base is 
 greater than <m>10</m>.
+</p>
+</section>

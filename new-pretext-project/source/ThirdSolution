@@ -7,7 +7,7 @@
   <me>
   c_i = \left\lfloor 2n \left\{ \frac{n^{k-i-1}}{2^{i+1}\right\} \right\rfloor
   </me>. 
-  Note that once this is established, <m>\left\{ 0 \le \frac{n^{k-i-1}}{2^{i+1}\right\} \lt 1</me>
+  Note that once this is established, <m>\left\{ 0 \le \frac{n^{k-i-1}}{2^{i+1}\right\} \lt 1</m>
   that <m>0 \le c_i 2n</m>.  Establishing this fact will finish the proof becuase if
   <m>n \ge 2^{k-1}(d + 1)</m>, then
   <me>
@@ -19,7 +19,8 @@
     For any <m>m</m> with <m>0 \le m \le k</m> 
     <me>
     n^k - \sum_{i=m}^{k-1} = (2n)^m
-\left\{ \frac{n^{k-m}}{2^m} \right\}   
+\left\{ \frac{n^{k-m}}{2^m} \right\} 
+</me>  
 </statement>
   <proof>
     <p>
@@ -40,7 +41,7 @@
     \left\lfloor 2n \left\{ \frac{n^{k-m-1}}}{2^{m+1}} \right\rfloor \right)
 </mrow>
 <mrow> \amp=(2n)^m \left\{ 2n \left\{ \frac{n^{k-m-1}}}{2^{m+1}} \right} 
-</mrow>. 
+</mrow></md>. 
 The last step used the identity <m>x - \lfloor x \rfloor = \{ x \}</m>. 
 </li>
 <li>  Notice that is <m>a</m> is an integer and  <m>x</m> is a real number
@@ -51,10 +52,11 @@ Using this identity further simplifies to
 n^k - \sum_{i=m}^{k-1} = (2n)^m
 \left\{ \frac{n^{k-m}}{2^m} \right\} =
 (2n)^m \left\{ 2n \frac{n^{k-m-1}}}{2^{m+1}} \right} 
-= (2n)^m \left\{ \frac{n^{k-m}}{2^m}\right\}. 
-This complete the induction step.
+= (2n)^m \left\{ \frac{n^{k-m}}{2^m}\right\}. </me> 
+This completes the induction step.</li>
 </ol>
         </p>
   </proof>
 </lemma>
+</p>
 </section>

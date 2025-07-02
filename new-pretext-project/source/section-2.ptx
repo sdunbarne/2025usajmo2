@@ -6,7 +6,7 @@
   recall that <m> n^{i+1}</m> divides <m>s_i</m>.  Denote 
   <m>t_i = s_i/n^{i+1}</m>.   
   Recall that the units digit is <m>c_0 = n</m> so 
-  <m>s_i \gt 0</m> and therefore <m>t_i \ge 1</me>.  We have
+  <m>s_i \gt 0</m> and therefore <m>t_i \ge 1</m>.  We have
   <me>
   c_i = \left\lfloor \frac{s_i}{(2n)^i} \right\rfloor 
       = \left\lfloor \frac{nt_i}{2^i}\right\rfloor
@@ -17,7 +17,7 @@
   As noted in the First Solution 
   <m>n^k \lt (2n)^k</m>, so <m>n^k</m> has at most <m>k</m> 
     digits when expressed in base <m>2n</m>.  So we may always assume 
-    <m>i < k</m>.  But if <m> n \gt 2^{k-1}(d + 1)</m>, then 
+    <m>i \lt  k</m>.  But if <m> n \gt 2^{k-1}(d + 1)</m>, then 
     by the foregoing 
     <me>
     c_i \gt  \left\lfloor \frac{n}{2^i}\right\rfloor \ge 
@@ -43,16 +43,4 @@
    </me>. 
 Then the proof proceeds as before.
 </p>
-
-  <!--
-  <p>foo</p>
-  <figure xml:id="figure-tikz-example-diagram">
-    <caption>The graph <m>C_5</m> made by TikZ</caption>
-    <image xml:id="tikz-example-diagram" width="20%">
-      <description>A 5-cycle</description>
-      <latex-image> \begin{tikzpicture} \coordinate (A) at (90+360/5:1); \coordinate (B) at (90+2*360/5:1); \coordinate (C) at (90+3*360/5:1); \coordinate (D) at (90+4*360/5:1); \coordinate (E) at (90:1); \draw (A) -- (B) -- (C) -- (D) -- (E) -- (A); \foreach \x in {(A), (B), (C), (D), (E)}{ \fill \x circle (2pt); } \end{tikzpicture} </latex-image>
-    </image>
-  </figure>
-  <p>bar</p>
-  -->
 </section>
