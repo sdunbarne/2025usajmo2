@@ -18,8 +18,10 @@
     <xi:include href="./problem.ptx" />
     <xi:include href="./examples.ptx" />
     <xi:include href="./notation.ptx" />
-    <xi:include href="./section-1.ptx" />
-    <xi:include href="./section-2.ptx" />
+    <xi:include href="./firstsolution.ptx" />
+    <xi:include href="./secondsolution.ptx" />
+    <xi:include href="./thirdsolution.ptx" />
+    <xi:include href="./fourthsolution.ptx" />
   </article>
 
 </pretext>
