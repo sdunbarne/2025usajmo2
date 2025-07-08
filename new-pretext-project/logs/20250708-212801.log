@@ -1,0 +1,61 @@
+INFO    : Building target print
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/2025usajmo2/new-pretext-project/output/print.
+INFO    : discovering source file's directory name: /workspaces/2025usajmo2/new-pretext-project/source
+INFO    : verifying and expanding input directory: /workspaces/2025usajmo2/new-pretext-project/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/2025usajmo2/new-pretext-project/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/2025usajmo2/new-pretext-project/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/2025usajmo2/new-pretext-project/assets
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : converting /workspaces/2025usajmo2/new-pretext-project/source/main.ptx to LaTeX as /tmp/ptx-zvkhnquz/main.tex
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/pretext-latex.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/pretext-latex.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+CRITICAL: PTX:ERROR: cannot locate executable with configuration name `LatexEngine.XELATEX` as command `xelatex`
+***  Edit the configuration file  ("pretext.cfg" or "project.ptx") and/or install  ***
+***  the necessary program and/or make sure the executable is on your PATH         ***
+INFO    : ------------------------
+CRITICAL: Failed to build.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
