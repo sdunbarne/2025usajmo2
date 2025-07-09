@@ -8,10 +8,10 @@
   <m>n^k</m> are all at least <m>d+1</m>.
 </p>
 <p>
-The concept of this solution is simple.  Multiplying <m>n^{k-1} \cdot n</m> using 
-the elementary school multiplication algorithmin base <m>2n</m>, if every digit of 
+The concept of this solution is simple.  Multiply <m>n^{k-1} \cdot n</m> using 
+the elementary school multiplication algorithmin in base <m>2n</m>. If every digit of 
 <m>n^{k-1}</m> is at least <m>2d</m>, then every carry is between <m>d</m> and <m>m-1</m>.
-Therefore every digit of the product is of the form <m>x + r \mod (2n)</m> where <m>x</m>
+Therefore every digit of the product is of the form <m>x + r \bmod (2n)</m> where <m>x</m>
 is either <m>0</m> or <m>n</m>, that is, <m>n</m> times a digit <m>\mod (2n)</m>, 
 and <m>d \le r \le n-1</m>.  In particular, every digit is at least <m>d</m>.  Note that
 in particular, it is necessary to recognize that each carry is at most <m>m-1</m>.
@@ -29,7 +29,7 @@ single <q>digit</q> <m>n</m> which then satisifies <m>n \gt N = d</m>.
   <statement>
     <p>
       Let the base-<m>2n</m> digits of <m>A</m> be <m>a_{m}a_{m-1} \dots a_{1}a_{0}</m>.
-      In other words, <m>0 \le a_i \le 2n</m> and <m>A = \sum_{i=0}^m a_i (2n)^{i}</m>.
+      In other words, <m>0 \le a_i \lt 2n</m> and <m>A = \sum_{i=0}^m a_i (2n)^{i}</m>.
       Iteratively define the digits of <m> n \cdot A </m> as <m>c_i</m> with carries <m>r_i</m>
       as <m>r_0 = 0</m>, <m>c_i = \operatorname{rem}(n a_i + r_i, 2n)</m>, 
       and 
@@ -69,11 +69,11 @@ single <q>digit</q> <m>n</m> which then satisifies <m>n \gt N = d</m>.
 Apply the lemma to <m>n^{k-1}</m> with digits <m>a_{m}a_{m-1}\dots a_{1}a_{0}</m>.
 Sppose that <m>a_i \ge 2(d+1)</m> for all <m>i</m>.  Multiplying 
 <m>n^{k-1} \cdot n = n^{k}</m> with digits <m>c_i</m> and carries <m>r_i</m>.
-Then <m>c_0 = n \gt d</m> since <m>a_0 = n \gt d</m>.  On the other hand, if'
+Then <m>c_0 = n \gt d</m> since <m>a_0 = n \gt d</m>.  On the other hand, if
 <m> i \ge 1 </m>, then 
 <me>
    r_i = \left\lfloor \frac{n a_{i-1} + r_{i-1}}{2n} \right\rfloor \gt
-        \left\lfloor \frac{n \cdot 2(d+1) + 0}}{2n} \right\rfloor = 1
+        \left\lfloor \frac{n \cdot 2(d+1) + 0}{2n} \right\rfloor = 1
 </me>
 so all carries are at least <m>d+1</m>.  But <m>\operatorname{rem}(n \cdot a_{i}, 2n)</m>
 is either <m>0</m> or <m>n</m>, so 
@@ -82,7 +82,7 @@ is either <m>0</m> or <m>n</m>, so
 which means that <m>\operatorname{rem}(n \cdot a_{i}, 2n) + r_i</m> is between 
 <m>d+1</m> and <m> 2n-1</m> so 
 <me>
-    c_i = \operatorname{rem( \operatorname{rem}(n \cdot a_{i}, 2n) + r_{i}, 2n) \gt d 
+    c_i = \operatorname{rem}( \operatorname{rem}(n \cdot a_{i}, 2n) + r_{i}, 2n) \gt d 
 </me>.
 </p>
 <p>

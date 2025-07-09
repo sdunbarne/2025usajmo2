@@ -17,11 +17,10 @@
   As noted in the First Solution 
   <m>n^k \lt (2n)^k</m>, so <m>n^k</m> has at most <m>k</m> 
     digits when expressed in base <m>2n</m>.  So we may always assume 
-    <m>i \lt  k</m>.  But if <m> n \gt 2^{k-1}(d + 1)</m>, then 
-    by the foregoing 
+    <m>i \lt  k</m>.  If <m> n \gt 2^{k-1}(d + 1)</m>, then 
     <me>
-    c_i \gt  \left\lfloor \frac{n}{2^i}\right\rfloor \ge 
-    \left\lfloor \frac{2^{k-1}(d+1)}{2^k-1}\right\rfloor 
+    c_i \ge  \left\lfloor \frac{n}{2^i}\right\rfloor \ge 
+    \left\lfloor \frac{2^{k-1}(d+1)}{2^{k-1}}\right\rfloor 
     = (d+1)
     </me>
     as desired.
@@ -29,16 +28,16 @@
   <p>
   Another way to prove 
   <me>
-   c_i = left\lfloor \frac{nt_i}{2^i}\right\rfloor
+   c_i = \left\lfloor \frac{nt_i}{2^i}\right\rfloor
    </me>
    is to first to recall that <m>s_i = t_i \cdot n^{i+1}</m> 
-   and <m>s_{i-1} = t_{i-1} \cdot n^i</m>.  then
+   and <m>s_{i-1} = t_{i-1} \cdot n^i</m>.  Then
    <me>
    c_i = \frac{s_i - s_{i-1}}{(2n)^i} 
    = \frac{n t_i - t_{i-1}}{2^i}
    </me>.
    But <m>s_i \lt (2n)^{i+1}</m>, so 
-   <me>t_i \cdot n^{i+1} \lt 2^{i+1} = 
+   <me>t_i \cdot n^{i+1} \lt 2^{i+1} n^{i+1} = 
    \left\lfloor \frac{nt_i}{2^i}\right\rfloor
    </me>. 
 Then the proof proceeds as before.

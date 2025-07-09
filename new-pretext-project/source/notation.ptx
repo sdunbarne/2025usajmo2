@@ -17,10 +17,10 @@
     n^k = c_{k-1}(2n)^{k-1} + c_{k-2}(2n)^{i-2} + \dots + c_1(2n)^1 + c_0(2n)^0
     </me>.  The goal is to
     prove that there is a positive integer <m>N</m> such that for every odd <m>n > N</m> the 
-    coefficients satisfy <m>c_i\geq d+1</m> for all <m>i\geq 0</m>.</p> 
+    coefficients satisfy <m>c_i\geq d+1</m> for all <m>0 \le i \leq k-1</m>.</p> 
 <p>
 For a real number <m>x</m>, write <m>\lfloor x \rfloor</m> for the greatest integer less than
-<m>x</m> and <m>{x} = x - \lfloor x \rfloor</m> for the fractional part of <m>x</m>.
+<m>x</m> and <m>\left\{ x \right\} = x - \lfloor x \rfloor</m> for the fractional part of <m>x</m>.
 For integers <m>x</m> and <m>y</m>, let <m>\operatorname{rem}(x,y) </m> be the remainder
 left by division of <m>x</m> by <m>y</m>. </p>
     </section>

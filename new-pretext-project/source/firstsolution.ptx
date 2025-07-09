@@ -10,14 +10,14 @@
     <m>n^k = 5^4 = 625 = 0(2 \cdot 5)^3 + 6(2 \cdot 5)^2 + 2(2 \cdot 5)^1 + 5(2 \cdot 5)^0</m>.
     </p>
     <p>
-    The next claim is that <m>n^k \equiv n (\mod (2n)</m>.  The proof is by induction.  The base
-    case is <m>k=1</m>, where <m>n^1 \equiv n (\mod (2n)</m> is trivially true.  The inductive step
-    starts with <m>n^{k+1} = n^k \cdot n \equiv n \cdot n = n^2 \mod (2n)</m>.  Since <m>n</m> is odd, <m>n = 2m + 1</m>
-    for some <m>m</m>.  Then <m>n^2 = (2m+1) \cdot n = (2m)n + n \equiv n (\mod (2n)</m> is also  true.  The inductive step is complete.
-    The conclusion drawn from this fact is that the units 
-    digit is <m>n</m>.</p>
+    The first claim is that <m>n^k \equiv n (\mod(2n)</m>.  The proof is by induction.  The base
+    case is <m>k=1</m>, where <m>n^1 \equiv n (\bmod(2n)</m> is trivially true.  The inductive step
+    starts with <m>n^{k+1} = n^k \cdot n \equiv n \cdot n = n^2 \bmod(2n)</m>.  Since <m>n</m> is odd, <m>n = 2m + 1</m>
+    for some <m>m</m>.  Then <m>n^2 = (2m+1) \cdot n = (2m)n + n \equiv n (\bmod(2n)</m> is also  true.  The inductive step is complete.
+    A conclusion drawn from this fact is that the units 
+    digit is always <m>n</m>.</p>
     <p>
-    Keeping with the established notation,<m>c_i</m> denotes the digit of 
+    Keeping with the established notation, <m>c_i</m> denotes the digit of 
     <m>n^k</m> in the <m>(2n)^i</m> place, so in the power sum form
     <me>
     n^k = \sum_{i=0}^{k-1} c_i (2n)^i, 0 \le c_i \lt (2n)
@@ -26,19 +26,19 @@
     of <m>n^k</m> at the 
     <m>i+1</m>rightmost digits, so
     <me>
-    s_i = \sum_{j=0}^{i} \sum_{i=0}^{i} c_j (2n)^j, 0 \le c_j \lt (2n)
+    s_i = \sum_{j=0}^{i} c_j (2n)^j, 0 \le c_j \lt (2n)
     </me>
     for each <m>i</m>.
     </p>
     <p>
     Note that <m>n^k - s_i</m> has only terms of power <m>(2n)^{i+1}</m> and higher.  
     Then <m>(2n)^{i+1}</m> divides <m>n^k - s_i</m>.  That is, <m>n^k - s_i = q \cdot (2n)^{i+1}</m>
-    or equivalently <m>s_i = n^k - q \cdot (2n)^{i+1} = n^{i+1}(n^{k-i-1}- q 2^{i+1})</m> 
-    for some integer <m>q</m>. That is <m> n^{i+1}</m> divides <m>s_i</m>.  Now <m>c_0 = n</m>
-    so <m>s_i \gt 0 </m> and therefore <m>s_i \ge n^{i+1}</m>.    
+    or equivalently <m>s_i = n^k - q \cdot (2n)^{i+1} = n^{i+1}(n^{k-i-1}- q \cdot 2^{i+1})</m> 
+    for some integer <m>q</m>. That is <m> n^{i+1}</m> divides <m>s_i</m>.  Because <m>c_0 = n</m>,
+    <m>s_i \gt 0 </m> and therefore <m>s_i \ge n^{i+1}</m>.    
     </p>
     <p>
-    Now if <m>n > (d+1) \cdot 2^{i+1}</m>, then <m>s_i \ge (d+1) \cdot (2n)^{i} > (d+1)</m>.  
+    Now if <m>n > (d+1) \cdot 2^{k-1}</m>, then <m>s_i \ge (d+1) \cdot (2n)^{i} > (d+1)</m>.  
     But this means the digit in the <m>(2n)^i</m> place is at least <m>d+1</m>.  
     Since this is true for all <m>i</m> with <m>0 \le i \le k-1</m>, the problem is finished.
     </p>
