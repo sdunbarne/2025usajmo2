@@ -157,9 +157,101 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="examples-3">On the other hand, consider the even number <span class="process-math">\(30\)</span> greater than <span class="process-math">\(N = 28\text{.}\)</span> Then <span class="process-math">\(30^3 = 27,000\)</span> epressed in base-<span class="process-math">\(60\)</span> is <span class="process-math">\(7 \cdot 60^{2} + 30 \cdot 60 + 0\)</span> and the last “digit” <span class="process-math">\(0\)</span> fails to be greater than <span class="process-math">\(6\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#examples-3" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="examples-4">As some further examples, consider the following table of odd numbers <span class="process-math">\(n\)</span> raised to some low powers and then expressed in base-<span class="process-math">\(2n\text{.}\)</span>  The expressions have their “digits” expressed as decimal numbers, with a “digit” in parentheses if the base is greater than <span class="process-math">\(10\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#examples-4" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="examples-4">As some further examples, consider the following table of odd numbers <span class="process-math">\(n\)</span> raised to some low powers and then expressed in base-<span class="process-math">\(2n\text{.}\)</span>  The expressions have their “digits” expressed as decimal numbers, with a “digit” in parentheses if the base is greater than <span class="process-math">\(10\text{.}\)</span>  Note that as expected the final digit is always <span class="process-math">\(n\text{.}\)</span> Furthermore the digits are increasing, so it might be suspected that given <span class="process-math">\(k\)</span> and <span class="process-math">\(d\)</span> there is some <span class="process-math">\(N\)</span> such that for <span class="process-math">\(n &gt; N\text{,}\)</span> the digits of <span class="process-math">\(n^k\)</span> are greater than <span class="process-math">\(d\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#examples-4" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Section 2: Preliminary Examples"><a href="#examples" title="Copy permalink for Section 2: Preliminary Examples">🔗</a></div></section></div>
+<figure class="table table-like" id="examples-5"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1<span class="period">.</span></span><span class="space"> </span>Sample expansions to illustrate the hypothesis.<div class="autopermalink" data-description="Table 2.1: Sample expansions to illustrate the hypothesis."><a href="#examples-5" title="Copy permalink for Table 2.1: Sample expansions to illustrate the hypothesis.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(k\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(n\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2n\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(n^k\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((n^k)_{2n}\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines">13</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">25</td>
+<td class="l m b0 r0 l0 t0 lines">25</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines">14</td>
+<td class="l m b0 r0 l0 t0 lines">49</td>
+<td class="l m b0 r0 l0 t0 lines">37</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines">18</td>
+<td class="l m b0 r0 l0 t0 lines">81</td>
+<td class="l m b0 r0 l0 t0 lines">49</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">11</td>
+<td class="l m b0 r0 l0 t0 lines">22</td>
+<td class="l m b0 r0 l0 t0 lines">121</td>
+<td class="l m b0 r0 l0 t0 lines">5(11)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines">27</td>
+<td class="l m b0 r0 l0 t0 lines">043</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">125</td>
+<td class="l m b0 r0 l0 t0 lines">125</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines">14</td>
+<td class="l m b0 r0 l0 t0 lines">343</td>
+<td class="l m b0 r0 l0 t0 lines">1(10)7</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">9</td>
+<td class="l m b0 r0 l0 t0 lines">18</td>
+<td class="l m b0 r0 l0 t0 lines">729</td>
+<td class="l m b0 r0 l0 t0 lines">249</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">11</td>
+<td class="l m b0 r0 l0 t0 lines">22</td>
+<td class="l m b0 r0 l0 t0 lines">1331</td>
+<td class="l m b0 r0 l0 t0 lines">2(16)(11)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">13</td>
+<td class="l m b0 r0 l0 t0 lines">26</td>
+<td class="l m b0 r0 l0 t0 lines">2197</td>
+<td class="l m b0 r0 l0 t0 lines">36(13)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+<td class="l m b0 r0 l0 t0 lines">3375</td>
+<td class="l m b0 r0 l0 t0 lines">3(22)(15)</td>
+</tr>
+</table></div></figure><div class="autopermalink" data-description="Section 2: Preliminary Examples"><a href="#examples" title="Copy permalink for Section 2: Preliminary Examples">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="problem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notation.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

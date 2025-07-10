@@ -1,0 +1,59 @@
+INFO    : Building target web
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/2025usajmo2/new-pretext-project/output/web.
+INFO    : discovering source file's directory name: /workspaces/2025usajmo2/new-pretext-project/source
+INFO    : verifying and expanding input directory: /workspaces/2025usajmo2/new-pretext-project/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/2025usajmo2/new-pretext-project/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/2025usajmo2/new-pretext-project/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/2025usajmo2/new-pretext-project/assets
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.8.4
+INFO    : Downloading Runestone Services, version 7.8.4
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-default-modern
+INFO    : converting /workspaces/2025usajmo2/new-pretext-project/source/main.ptx to HTML in /tmp/ptx-e_vgmxlh
+INFO    : XSL conversion of /workspaces/2025usajmo2/new-pretext-project/source/main.ptx by /home/codespace/.ptx/2.19.2/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/codespace/.ptx/2.19.2/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /tmp/ptx-e_vgmxlh
+INFO    : Removing temporary directory /tmp/ptx-g_cbkr5e
+INFO    : 
+Success! Run `pretext view web` to see the results.
+
+INFO    : 

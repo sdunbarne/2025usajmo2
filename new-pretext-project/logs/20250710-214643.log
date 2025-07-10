@@ -1,0 +1,115 @@
+INFO    : Found entry no longer exists 5580
+INFO    : Now preparing local server to preview your project directory `/workspaces/2025usajmo2/new-pretext-project`.
+INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :   GitHub Pages site that can be shared with readers who cannot access your
+INFO    :   personal computer.)
+INFO    : 
+INFO    : starting server ...
+INFO    : Running in a codespace, so using a subprocess server.
+INFO    : Starting the server
+INFO    : There are 10 or more servers on file. Cleaning up ...
+INFO    : Found entry no longer exists 5580
+INFO    : Terminating 5580
+INFO    : Terminate failed for 5580.
+ERROR   : process PID not found (pid=5580)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=5580)
+INFO    : Found entry no longer exists 8750
+INFO    : Terminating 8750
+INFO    : Terminate failed for 8750.
+ERROR   : process PID not found (pid=8750)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=8750)
+INFO    : Found entry no longer exists 21252
+INFO    : Terminating 21252
+INFO    : Terminate failed for 21252.
+ERROR   : process PID not found (pid=21252)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=21252)
+INFO    : Found entry no longer exists 3297
+INFO    : Terminating 3297
+INFO    : Terminate failed for 3297.
+ERROR   : process PID not found (pid=3297)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=3297)
+INFO    : Found entry no longer exists 9335
+INFO    : Terminating 9335
+INFO    : Terminate failed for 9335.
+ERROR   : process PID not found (pid=9335)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=9335)
+INFO    : Found entry no longer exists 2381
+INFO    : Terminating 2381
+INFO    : Terminate failed for 2381.
+ERROR   : process PID not found (pid=2381)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=2381)
+INFO    : Found entry no longer exists 36455
+INFO    : Terminating 36455
+INFO    : Terminate failed for 36455.
+ERROR   : process PID not found (pid=36455)
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/server.py", line 76, in terminate
+    psutil.Process(self.pid).terminate()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 317, in __init__
+    self._init(pid)
+  File "/home/codespace/.local/lib/python3.12/site-packages/psutil/__init__.py", line 363, in _init
+    raise NoSuchProcess(pid, msg=msg) from None
+psutil.NoSuchProcess: process PID not found (pid=36455)
+INFO    : Found server at localhost:8128
+INFO    : Found server at localhost:8129
+INFO    : Found process 21106 no longer listening on specified port 8130
+INFO    : Terminating 21106
+INFO    : Added server entry 07f78c8286 21106 8130 localhost
+
+INFO    : Server will soon be available at https://cautious-space-disco-vgqxg6wqpw92x9rx-8130.app.github.dev
+INFO    : Opening browser for target `web` at https://cautious-space-disco-vgqxg6wqpw92x9rx-8130.app.github.dev/output/web
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

@@ -25,7 +25,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2",
   "title": "Preliminary Examples",
-  "body": " Preliminary Examples  Let and . The proofs later will show that taking and an odd integer greater than , say , then all the digits of in base- are greater than . This really means expressing . The digits are greater than . Note that the final digit of in base- is itself. This will be proved to be true in general in the later sections.  On the other hand, consider the even number greater than . Then epressed in base- is and the last digit  fails to be greater than .  As some further examples, consider the following table of odd numbers raised to some low powers and then expressed in base- . The expressions have their digits expressed as decimal numbers, with a digit in parentheses if the base is greater than .  "
+  "body": " Preliminary Examples  Let and . The proofs later will show that taking and an odd integer greater than , say , then all the digits of in base- are greater than . This really means expressing . The digits are greater than . Note that the final digit of in base- is itself. This will be proved to be true in general in the later sections.  On the other hand, consider the even number greater than . Then epressed in base- is and the last digit  fails to be greater than .  As some further examples, consider the following table of odd numbers raised to some low powers and then expressed in base- . The expressions have their digits expressed as decimal numbers, with a digit in parentheses if the base is greater than . Note that as expected the final digit is always . Furthermore the digits are increasing, so it might be suspected that given and there is some such that for , the digits of are greater than .   Sample expansions to illustrate the hypothesis.                     2  3  6  9  13    2  5  10  25  25    2  7  14  49  37    2  9  18  81  49    2  11  22  121  5(11)    3  3  6  27  043    3  5  10  125  125    3  7  14  343  1(10)7    3  9  18  729  249    3  11  22  1331  2(16)(11)    3  13  26  2197  36(13)    3  15  30  3375  3(22)(15)     "
+},
+{
+  "id": "examples-5",
+  "level": "2",
+  "url": "examples.html#examples-5",
+  "type": "Table",
+  "number": "2.1",
+  "title": "Sample expansions to illustrate the hypothesis.",
+  "body": " Sample expansions to illustrate the hypothesis.                     2  3  6  9  13    2  5  10  25  25    2  7  14  49  37    2  9  18  81  49    2  11  22  121  5(11)    3  3  6  27  043    3  5  10  125  125    3  7  14  343  1(10)7    3  9  18  729  249    3  11  22  1331  2(16)(11)    3  13  26  2197  36(13)    3  15  30  3375  3(22)(15)    "
 },
 {
   "id": "notation",
@@ -61,7 +70,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6",
   "title": "Third Solution",
-  "body": " Third Solution  This solution will prove an explicit formula for the digits in the base expansion of , specifically . Note that once this is established, that . Establishing this fact will finish the proof because if , then .  For any with       The proof is by downward induction on . When , the statement is which is true.  Suppose the statement holds for . Then using the induction hypothesis . The last step used the identity .  Notice that if is an integer and is a real number then .  Using this identity further simplifies to This completes the induction step.       "
+  "body": " Third Solution  This solution will prove an explicit formula for the digits in the base expansion of , specifically . Note that once this is established, then because it follows that . Establishing this fact will finish the proof because if , then .  For any with       The proof is by downward induction on . When , the statement is which is true.  Suppose the statement holds for . Then using the induction hypothesis . The last step used the identity .  Notice that if is an integer and is a real number then .  Using this identity further simplifies to This completes the induction step.       "
 },
 {
   "id": "lemma-digits",
