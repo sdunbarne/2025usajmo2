@@ -16,8 +16,18 @@ Then <m>30^3 = 27,000</m> epressed in base-<m>60</m> is <m>7 \cdot 60^{2} + 30 \
 and the last <q>digit</q> <m>0</m> fails to be greater than <m>6</m>.
 </p>
 <p>
+For some intuition why <m>N = (d+1) c\dot 2^{k-1}</m> suffices, consider that 
+<m>n^k < (2n)^k</m>, so sufficiently large <m>n</m> the base-<m>2n</m> expansion 
+will have at most <m>k</m> digits from <m>0</m> to <m>k-1</m>.  For sufficiently
+large <m>n</m>, <m>n^k</m> will have exactly <m>k</m> digits, with no leading zeros.
+To at least meet the requirement, the expansion needs 
+<m>n^k \ge (d+1)(2n)^{k-1}</m>.  Canceling <m>n^{k-1}</m> gives 
+<m>n \ge (d+1)2^{k-1}</m>.  The proofs will show it is also sufficient for
+the remaining digits.
+</p>
+<p>
 As some further examples, consider the following table of odd numbers <m>n</m>
-raised to some low powers and then expressed in base-<m>2n</m>.  The expressions have their
+raised to some low powers <m>k</m> and then expressed in base-<m>2n</m>.  The expressions have their
 <q>digits</q> expressed as decimal numbers, with a <q>digit</q> in parentheses if the base is 
 greater than <m>10</m>.  Note that as expected the final digit is always <m>n</m>.  
 Furthermore the digits are increasing, so it might be suspected that given <m>k</m> 

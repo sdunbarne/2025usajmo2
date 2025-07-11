@@ -10,10 +10,10 @@
     <m>n^k = 5^4 = 625 = 0(2 \cdot 5)^3 + 6(2 \cdot 5)^2 + 2(2 \cdot 5)^1 + 5(2 \cdot 5)^0</m>.
     </p>
     <p>
-    The first claim is that <m>n^k \equiv n (\mod(2n)</m>.  The proof is by induction.  The base
-    case is <m>k=1</m>, where <m>n^1 \equiv n (\bmod(2n)</m> is trivially true.  The inductive step
+    The first claim is that <m>n^k \equiv n \bmod(2n)</m>.  The proof is by induction on <m>k</m>.  The base
+    case is <m>k=1</m>, where <m>n^1 \equiv n \bmod(2n)</m> is trivially true.  The inductive step
     starts with <m>n^{k+1} = n^k \cdot n \equiv n \cdot n = n^2 \bmod(2n)</m>.  Since <m>n</m> is odd, <m>n = 2m + 1</m>
-    for some <m>m</m>.  Then <m>n^2 = (2m+1) \cdot n = (2m)n + n \equiv n (\bmod(2n)</m> is also  true.  The inductive step is complete.
+    for some <m>m</m>.  Then <m>n^2 = (2m+1) \cdot n = m(2n) + n \equiv n (\bmod(2n)</m> is also  true.  The inductive step is complete.
     A conclusion drawn from this fact is that the units 
     digit is always <m>n</m>.</p>
     <p>
@@ -35,10 +35,14 @@
     Then <m>(2n)^{i+1}</m> divides <m>n^k - s_i</m>.  That is, <m>n^k - s_i = q \cdot (2n)^{i+1}</m>
     or equivalently <m>s_i = n^k - q \cdot (2n)^{i+1} = n^{i+1}(n^{k-i-1}- q \cdot 2^{i+1})</m> 
     for some integer <m>q</m>. That is <m> n^{i+1}</m> divides <m>s_i</m>.  Because <m>c_0 = n</m>,
-    <m>s_i \gt 0 </m> and therefore <m>s_i \ge n^{i+1}</m>.    
+    <m>s_i \gt 0 </m> and therefore <m>s_i \ge n^{i+1}</m>.  This will be needed in
+    the next paragraph.  
     </p>
     <p>
-    Now if <m>n > (d+1) \cdot 2^{k-1}</m>, then <m>s_i \ge (d+1) \cdot (2n)^{i} > (d+1)</m>.  
+    If <m>n \gt (d+1) \cdot 2^{k-1}</m>, then 
+    <m>n^{i+1} \gt (d+1) \cdot 2^{k-1} n^i = (d+1) \cdot (2n)^i \cdot 2^{k-i-1}<m>. 
+    Of course <m>i+ 1 \le k</m> so using the fact from the previous paragraph
+    <m>s_i \ge n^{i+1} \ge (d+1) \cdot (2n)^{i}</m>.  
     But this means the digit in the <m>(2n)^i</m> place is at least <m>d+1</m>.  
     Since this is true for all <m>i</m> with <m>0 \le i \le k-1</m>, the problem is finished.
     </p>
