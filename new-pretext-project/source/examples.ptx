@@ -17,7 +17,7 @@ and the last <q>digit</q> <m>0</m> fails to be greater than <m>6</m>.
 </p>
 <p>
 For some intuition why <m>N = (d+1) c\dot 2^{k-1}</m> suffices, consider that 
-<m>n^k < (2n)^k</m>, so sufficiently large <m>n</m> the base-<m>2n</m> expansion 
+<m>n^k \lt (2n)^k</m>, so sufficiently large <m>n</m> the base-<m>2n</m> expansion 
 will have at most <m>k</m> digits from <m>0</m> to <m>k-1</m>.  For sufficiently
 large <m>n</m>, <m>n^k</m> will have exactly <m>k</m> digits, with no leading zeros.
 To at least meet the requirement, the expansion needs 

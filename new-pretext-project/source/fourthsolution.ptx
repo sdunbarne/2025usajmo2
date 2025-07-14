@@ -9,7 +9,7 @@
 </p>
 <p>
 The concept of this solution is simple.  Multiply <m>n^{k-1} \cdot n</m> using 
-the elementary school multiplication algorithmin in base <m>2n</m>. If every digit of 
+the elementary school multiplication algorithm in base <m>2n</m>. If every digit of 
 <m>n^{k-1}</m> is at least <m>2d</m>, then every carry is between <m>d</m> and <m>n-1</m>.
 Therefore every digit of the product is of the form <m>x + r \bmod (2n)</m> where <m>x</m>
 is either <m>0</m> or <m>n</m>, that is, <m>n</m> times a digit <m>\bmod (2n)</m>, 
@@ -19,26 +19,28 @@ If <m>n</m> carried over to an odd digit of <m>n^{k-1}</m>, then the correspondi
 digit of <m>n^{k}</m> would be <m>0</m> which is less than <m>d</m>.
 </p>
 <example>
-<title> Example multiplication by <m>5</m> in base <m>10</m>
+<title> Example multiplication by <m>5</m> in base <m>10</m></title>
 <p>
-To follow the previous reasoning and the Lemma, it helps to carefully
-examine a multiplication base <m>10</m>.
+To follow the previous reasoning and the next Lemma, it helps to carefully
+examine a multiplication base <m>10</m>.  This example uses the same notation
+as the Lemma.
 Consider the multiplication algorithm applied to multiplying <m>5^3 = 625</m> by
 <m>5</m>. There is no initial carry so set <m>r_0 = 0</m>. 
 First <m>5</m> multiplies <m>5</m> giving <m>25</m> so the unit digit in the product will
 be <m>\operatorname{rem}(5 \cdot 5 + 0, 10) = 5</m> and the first carry will be 
-<m>r_1 = \lfloor \frac{5*5 + 0}{10} \rfloor = 2</m>.  The next step in the multiplication
+<m>r_1 = \lfloor \frac{5 \cdot 5 + 0}{10} \rfloor = 2</m>.  The next step in the multiplication
 is <m>5</m> times <m>2</m> equals <m>10</m> plus the carry of <m>2</m> making <m>12</m>.
 Then the next digit will be <m>\operatorname{rem}(12, 10) = 2</m> and the next carry will be
-<m>r_2 =  \lfloor \frac{5*2 + 2}{10} \rfloor = 1</m>.  The next-to-final step in the multiplication
+<m>r_2 =  \lfloor \frac{5 \cdot 2 + 2}{10} \rfloor = 1</m>.  The next-to-final step in the multiplication
 is <m>5</m> times <m>6</m> equals <m>30</m> plus the carry of <m>1</m> making <m>31</m>.
 Then the third-from-right digit will be <m>\operatorname{rem}(31, 10) = 1</m> and the final carry will be
-<m>r_3 =  \lfloor \frac{5*6 + 1}{10} \rfloor = 3</m>.
-is <m>5</m> times the phantom fourth digit of  <m>0</m> equals <m>0</m> plus the 
+<m>r_3 =  \lfloor \frac{5 \cdot 6 + 1}{10} \rfloor = 3</m>.
+The final step is <m>5</m> times the phantom fourth digit of  <m>0</m> equals <m>0</m> plus the 
 carry of <m>3</m> making <m>3</m>.
 Then the fourth-from-right digit will be <m>\operatorname{rem}(3, 10) = 3</m> and the final 
 carry will be
-<m>r_4 =  \lfloor \frac{5*0 + 3}{10} \rfloor = 0</m>.  The multiplication is complete.
+<m>r_4 =  \lfloor \frac{5*0 + 3}{10} \rfloor = 0</m>.  The multiplication is complete with
+product <m>3125</m>.
 </p>
 </example>
 
@@ -57,7 +59,7 @@ carry will be
       </me>.
        Then 
        <ol>
-       <li> <m>0 \le c_i \le 2n</m> for each <m>i \ge 0</m>.</li>
+       <li> <m>0 \le c_i \lt 2n</m> for each <m>i \ge 0</m>.</li>
        <li> <m>0 \le r_i \lt n</m> for each <m>i \ge 0</m>.</li>
        <li> <m> n \cdot A = \sum_{i=0}^{m+1} c_i (2n)^{i}</m></li>
     </ol>     

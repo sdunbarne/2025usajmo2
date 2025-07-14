@@ -40,7 +40,7 @@
     </p>
     <p>
     If <m>n \gt (d+1) \cdot 2^{k-1}</m>, then 
-    <m>n^{i+1} \gt (d+1) \cdot 2^{k-1} n^i = (d+1) \cdot (2n)^i \cdot 2^{k-i-1}<m>. 
+    <m>n^{i+1} \gt (d+1) \cdot 2^{k-1} n^i = (d+1) \cdot (2n)^i \cdot 2^{k-i-1}</m>. 
     Of course <m>i+ 1 \le k</m> so using the fact from the previous paragraph
     <m>s_i \ge n^{i+1} \ge (d+1) \cdot (2n)^{i}</m>.  
     But this means the digit in the <m>(2n)^i</m> place is at least <m>d+1</m>.  

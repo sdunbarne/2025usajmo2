@@ -4,5 +4,8 @@
     <p><em>Problem:</em> Let <m>k</m> and <m>d</m> be positive integers.  Prove that there exists a positive
      integer <m>N</m> such that for every odd integer <m>n > N</m>, the digits in the base <m>2n</m> 
      representation of <m>n^k</m> are all greater than <m>d</m>.</p>
-    <p> The goal is to investigate the solution and the number theory behind that solution.</p>
+    <p> The goal is to investigate the solution and the number theory behind that solution.
+    The solutions presented here are enlargements and more detailed exlanations of the
+    official solutions.  All additions are my own work, there are no additions from any large language model.
+    </p>
 </introduction>
