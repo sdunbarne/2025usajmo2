@@ -15,7 +15,6 @@
     <xi:include href="./frontmatter.ptx" />
     
     <xi:include href="./introduction.ptx" />
-    <xi:include href="./problem.ptx" />
     <xi:include href="./examples.ptx" />
     <xi:include href="./notation.ptx" />
     <xi:include href="./firstsolution.ptx" />

@@ -7,17 +7,7 @@
   <m>n^{k-1}</m> are all at least <m>2(d+1)</m> then the base-<m>2n</m> digits of 
   <m>n^k</m> are all at least <m>d+1</m>.
 </p>
-<p>
-The concept of this solution is simple.  Multiply <m>n^{k-1} \cdot n</m> using 
-the elementary school multiplication algorithm in base <m>2n</m>. If every digit of 
-<m>n^{k-1}</m> is at least <m>2d</m>, then every carry is between <m>d</m> and <m>n-1</m>.
-Therefore every digit of the product is of the form <m>x + r \bmod (2n)</m> where <m>x</m>
-is either <m>0</m> or <m>n</m>, that is, <m>n</m> times a digit <m>\bmod (2n)</m>, 
-and <m>d \le r \le n-1</m>.  In particular, every digit is at least <m>d</m>.  Note that
-in particular, it is necessary to recognize that each carry is at most <m>n-1</m>.
-If <m>n</m> carried over to an odd digit of <m>n^{k-1}</m>, then the corresponding 
-digit of <m>n^{k}</m> would be <m>0</m> which is less than <m>d</m>.
-</p>
+
 <example>
 <title> Example multiplication by <m>5</m> in base <m>10</m></title>
 <p>
@@ -43,8 +33,30 @@ carry will be
 product <m>3125</m>.
 </p>
 </example>
-
+<example>
+<title>Multiplication of base <m>14</m> digits by <m>7</m></title>
 <p>
+It is additionally helpful for understanding the Lemma and the proof
+to look at another example of multiplication of digits in base <m>2n</m> 
+by <m>n</m> for a small value of <m>n</m>, say <m>n=7</m>.  Here the 
+digits will be the values <m>0</m> to <m>13</m>.  For an even value digit
+<m>2k</m> times <m>7</m>, the result will be <m>14 k</m>, where the value of <m>k</m>
+is <m>6</m> or less.  Then the new digit in the product will be <m>c_i = 0</m>
+and the carry will be <m>k</m> where <m>0 \le k \lt n</m>.  
+An odd value digit <m>2k + 1</m> times <m>7</m> will result in <m> 14 k + 7</m>
+so the new digit in the product will be <m>7</m> and the carry will be again be <m>k</m>
+with <m>0 \le k \lt n</m>.
+</p>
+</example>
+<remark>
+<title>A caution about notation</title>
+The standard notation used elsewhere for this article conflicts with the English names for the
+operations in the Multiplication Algorithm.  Here the product digits <m>c_i</m>
+are the results of a <em>remainder</em> operation, so A mnemonic notation might use
+<m>r</m>.  Similarly the <em>carry</em> values might use a 
+mnemonic notation <m>c</m> but instead 
+are called <m>r_i</m>.  So a cuation to the reader to not be confused, it's too late 
+to change notation now!  
 <lemma>
     <title>Multiplication Algorithm</title>
   <statement>
@@ -59,9 +71,9 @@ product <m>3125</m>.
       </me>.
        Then 
        <ol>
-       <li> <m>0 \le c_i \lt 2n</m> for each <m>i \ge 0</m>.</li>
+       <li> <m>0 \le c_i \lt 2n</m>.</li>
        <li> <m>0 \le r_i \lt n</m> for each <m>i \ge 0</m>.</li>
-       <li> <m> n \cdot A = \sum_{i=0}^{m+1} c_i (2n)^{i}</m></li>
+       <li> <m> n \cdot A = \sum_{i=0}^{m+1} c_i (2n)^{i}</m>./li>
     </ol>     
     </p>
   </statement>
@@ -85,6 +97,17 @@ product <m>3125</m>.
     </p>
   </proof>
 </lemma>
+</p>
+<p>
+The concept of this solution is simple.  Multiply <m>n^{k-1} \cdot n</m> using 
+the elementary school multiplication algorithm in base <m>2n</m>. If every digit of 
+<m>n^{k-1}</m> is at least <m>2d</m>, then every carry is between <m>d</m> and <m>n-1</m>.
+Therefore every digit of the product is of the form <m>x + r \bmod (2n)</m> where <m>x</m>
+is either <m>0</m> or <m>n</m>, that is, <m>n</m> times a digit <m>\bmod (2n)</m>, 
+and <m>d \le r \le n-1</m>.  In particular, every digit is at least <m>d</m>.  Note that
+in particular, it is necessary to recognize that <em>each carry is at most <m>n-1</m></em>.
+If <m>n</m> carried over to an odd digit of <m>n^{k-1}</m>, then the corresponding 
+digit of <m>n^{k}</m> would be <m>0</m> which is less than <m>d</m>.
 </p>
 <p>
 The base case for the induction is <m>k=1</m> is true if <m>N = d</m>. 
