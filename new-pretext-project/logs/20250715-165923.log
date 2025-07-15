@@ -1,0 +1,17 @@
+INFO    : Building target web
+ERROR   : XInclude Error caused build to fail:
+ERROR   : /workspaces/2025usajmo2/new-pretext-project/source/fourthsolution.ptx:80:10:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: li line 79 and ol
+/workspaces/2025usajmo2/new-pretext-project/source/fourthsolution.ptx:81:9:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: ol line 76 and p
+/workspaces/2025usajmo2/new-pretext-project/source/fourthsolution.ptx:82:15:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 66 and statement
+/workspaces/2025usajmo2/new-pretext-project/source/fourthsolution.ptx:102:9:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: statement line 65 and lemma
+/workspaces/2025usajmo2/new-pretext-project/source/fourthsolution.ptx:103:5:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: lemma line 63 and p
+/workspaces/2025usajmo2/new-pretext-project/source/main.ptx:23:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load /workspaces/2025usajmo2/new-pretext-project/source/fourthsolution.ptx, and no fallback was found
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+CRITICAL: Failed to build.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

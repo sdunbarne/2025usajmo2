@@ -50,13 +50,15 @@ with <m>0 \le k \lt n</m>.
 </example>
 <remark>
 <title>A caution about notation</title>
+<p>
 The standard notation used elsewhere for this article conflicts with the English names for the
 operations in the Multiplication Algorithm.  Here the product digits <m>c_i</m>
-are the results of a <em>remainder</em> operation, so A mnemonic notation might use
+are the results of a <em>remainder</em> operation, so a mnemonic notation might use
 <m>r</m>.  Similarly the <em>carry</em> values might use a 
 mnemonic notation <m>c</m> but instead 
-are called <m>r_i</m>.  So a cuation to the reader to not be confused, it's too late 
+are called <m>r_i</m>.  So a caution to the reader to not be confused, it's too late 
 to change notation now!
+</p>
 </remark>  
 <lemma>
     <title>Multiplication Algorithm</title>
@@ -74,7 +76,7 @@ to change notation now!
        <ol>
        <li> <m>0 \le c_i \lt 2n</m>.</li>
        <li> <m>0 \le r_i \lt n</m> for each <m>i \ge 0</m>.</li>
-       <li> <m> n \cdot A = \sum_{i=0}^{m+1} c_i (2n)^{i}</m>./li>
+       <li> <m> n \cdot A = \sum_{i=0}^{m+1} c_i (2n)^{i}</m>.</li>
     </ol>     
     </p>
   </statement>
