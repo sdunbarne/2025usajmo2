@@ -11,9 +11,9 @@
 <example>
 <title> Example multiplication by <m>5</m> in base <m>10</m></title>
 <p>
-To follow the previous reasoning and the next Lemma, it helps to carefully
-examine a multiplication base <m>10</m>.  This example uses the same notation
-as the Lemma.
+To follow the conclusions and reasoning of the next Lemma, it helps to carefully
+examine a multiplication by <m>5</m> in base <m>10</m>.  
+This example uses the same notation as the Lemma.
 Consider the multiplication algorithm applied to multiplying <m>5^3 = 625</m> by
 <m>5</m>. There is no initial carry so set <m>r_0 = 0</m>. 
 First <m>5</m> multiplies <m>5</m> giving <m>25</m> so the unit digit in the product will
@@ -42,7 +42,7 @@ by <m>n</m> for a small value of <m>n</m>, say <m>n=7</m>.  Here the
 digits will be the values <m>0</m> to <m>13</m>.  For an even value digit
 <m>2k</m> times <m>7</m>, the result will be <m>14 k</m>, where the value of <m>k</m>
 is <m>6</m> or less.  Then the new digit in the product will be <m>c_i = 0</m>
-and the carry will be <m>k</m> where <m>0 \le k \lt n</m>.  
+and the carry will be <m>k</m> where <m>0 \le k \le n</m>.  
 An odd value digit <m>2k + 1</m> times <m>7</m> will result in <m> 14 k + 7</m>
 so the new digit in the product will be <m>7</m> and the carry will be again be <m>k</m>
 with <m>0 \le k \lt n</m>.
@@ -92,25 +92,20 @@ to change notation now!
       0 \le r_{i+1} \le \left\lfloor \frac{n(2n-1) + (n-1)}{2n} \right\rfloor = n-1
       </me>,
       establishing the induction step.</li>
-      <li>To prove the third item, let <m>s_k = \sum_{i=0}^{k} c_i (2n)^i</m>.  By induction
-      on <m>k</m>, <m>s_k \equiv nA \mod (2n)^{k+1}</m>.  Since <m>n \cdot A \lt n \cdot (2n)^{m}</m>
-      and <m>0 \le s_{m+1} \lt (2n)^{m+1}</m>, this implies <m>n \cdot A = s_{m+1}</m>, 
-      completing the proof.</li>
+      <li>The third item is just a formal satement of the Multiplication Algorithm using the 
+      notation in the satement of the lemma.  Refer to the Examples for specific instances.
+      </li>
       </ol>
     </p>
   </proof>
 </lemma>
-</p>
+
 <p>
-The concept of this solution is simple.  Multiply <m>n^{k-1} \cdot n</m> using 
+The concept of this fourth solution is simple.  Multiply <m>n^{k-1} \cdot n</m> using 
 the elementary school multiplication algorithm in base <m>2n</m>. If every digit of 
 <m>n^{k-1}</m> is at least <m>2d</m>, then every carry is between <m>d</m> and <m>n-1</m>.
-Therefore every digit of the product is of the form <m>x + r \bmod (2n)</m> where <m>x</m>
-is either <m>0</m> or <m>n</m>, that is, <m>n</m> times a digit <m>\bmod (2n)</m>, 
-and <m>d \le r \le n-1</m>.  In particular, every digit is at least <m>d</m>.  Note that
-in particular, it is necessary to recognize that <em>each carry is at most <m>n-1</m></em>.
-If <m>n</m> carried over to an odd digit of <m>n^{k-1}</m>, then the corresponding 
-digit of <m>n^{k}</m> would be <m>0</m> which is less than <m>d</m>.
+Refer to the second example for specifics.
+In particular, every digit is at least <m>d</m>.  
 </p>
 <p>
 The base case for the induction is <m>k=1</m> is true if <m>N = d</m>. 
@@ -127,7 +122,7 @@ Then <m>c_0 = n \gt d</m> since <m>a_0 = n \gt d</m>.  On the other hand, if
 <m> i \ge 1 </m>, then 
 <me>
    r_i = \left\lfloor \frac{n a_{i-1} + r_{i-1}}{2n} \right\rfloor \gt
-        \left\lfloor \frac{n \cdot 2(d+1) + 0}{2n} \right\rfloor = 1
+        \left\lfloor \frac{n \cdot 2(d+1) + 0}{2n} \right\rfloor = d + 1
 </me>
 so all carries are at least <m>d+1</m>.  But <m>\operatorname{rem}(n \cdot a_{i}, 2n)</m>
 is either <m>0</m> or <m>n</m>, so 
@@ -147,6 +142,9 @@ multiplying <m>n^{k}</m> by <m>2</m> gives the base-<m>2n</m> number
 <m>a_{m}a_{m-1}\dots a_{1}a_{0}0</m>.  If one of th digits <m>c_i \le d</m>, then when 
 multiplying it by <m>2</m>, the carry is at most <m>1</m>, so 
 <m> a_{i} \le 2 c_i + 1 \le 2d + 1</m> which contradicts <m>a_{i} \ge 2(d+1)</m>. 
+</p>
+<p> Finally, again inductively if <m>n > (d+1)2^{k-1}</m> then all of the digits of
+<m>n^k</m> are greater than <m>d+1</m>.
 </p>
 </section>
 
